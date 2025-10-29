@@ -1,0 +1,21 @@
+section.video {
+    width: 100%;
+    position: relative;
+}
+
+section div.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+section div.background video {
+    min-width: 100vw;
+    min-height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}

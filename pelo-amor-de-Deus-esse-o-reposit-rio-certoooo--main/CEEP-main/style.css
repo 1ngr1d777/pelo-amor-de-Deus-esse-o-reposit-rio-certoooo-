@@ -1,0 +1,111 @@
+body { margin: 0; padding: 0; }
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+ul { list-style: none; }
+a { text-decoration: none; }
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #0400ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container div.video {
+    width: 100%;
+    position: relative;
+}
+
+div.container div.video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+
+
+
+.box { 
+    width: 350px; 
+    height: 610px; 
+    background: #ff0000; 
+    border-radius: 10px; 
+    box-shadow: 2px 10px 12px rgb(207, 243, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 20px 10px; 
+}
+
+.botao-fixo {
+    position: fixed;
+    bottom: 10px;
+    left: 20px;
+    z-index: 1000; /* para garantir que fique acima de outros elementos */
+}
+
+
+    .box:hover { background-color: #fbff03; transform-style: preserve-3d; transform: scale(1.02); transition: all ease .3s; }
+        .box:hover .marvel { color: #C0292B; transition: all ease .5s; }
+.model { height: 350px; max-height: 100%; max-width: 100%; }
+
+.details { display: flex; flex-direction: column; align-items: center; width: 300px; }
+    .details p { font-family: calibri; font-weight: bold; color: #6A6A74; text-align: center; margin-top: 20px; }
+.marvel { color: #32323E; font-weight: bold; letter-spacing: 2px; font-family: Bebas Kai; font-size: 25px; }
+.logo { height: 60px; }
+
+section button.botao {
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: rgb(0, 255, 0);                             
+    border: 2px solid rgb(22, 118, 43);                  
+    padding: 10px 20px;                       
+    font-size: 10px;                        
+    border-radius: 8px;                      
+    cursor: pointer;
+    text-transform: uppercase;               
+    font-weight: bold;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    margin: 100px;
+    }
+
+
+section button:hover {
+    border-color: white;
+    font-size: 25px;
+}
+@media(max-width: 720px) {
+    .box { width: 94%; height: 500px; }
+    .model { height: 250px; }
+    .details p { font-size: 14px; width: 250px; } 
+}
+
+@media(max-height: 600px) {
+    .container { height: 90%; }
+}
